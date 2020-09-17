@@ -1,0 +1,587 @@
+
+*{margin:0;padding: 0;}
+
+.banner-tren{
+    background-color:rgb(61, 60, 60);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    font-family: segoe ui light;
+}
+
+.banner-trai{
+    width: 70%;
+    display: flex;
+    margin-left: 130px;
+    margin-top: 10px;
+}
+
+.banner-trai i{
+    font-size: 25px;
+    color: #fff;
+    padding-right: 5px;
+}
+
+.banner-trai span{
+    color: white;
+}
+
+.banner-trai .trai1{
+margin-right: 10px;
+}
+
+.banner-trai a {
+    text-decoration: none;
+}
+
+.banner-phai {
+    width: 30%;
+    display: flex;
+    margin-left: 65px;
+    margin-top: 10px;
+}
+
+.banner-phai .icon{
+    padding-right: 15px;
+}
+
+.banner-phai i{
+    font-size: 25px;
+    color: #fff;
+    padding-right: 5px;
+}
+
+.banner-phai .icon1{
+     float: left; border-left:0.5px solid #E8E8E8;
+     height: 30px;
+     color:white;
+     padding-left: 10px;
+     padding-right: 12px;
+     font-size: 20px;
+}
+
+.banner-phai .icon1:hover{
+    color: rgb(245, 93, 33);
+    margin-top:2px;
+    transition: 0.4s;
+}
+
+.banner-phai .icon i:hover{
+color: rgb(245, 93, 33);
+margin-top:2px;
+transition: 0.4s;
+}
+
+.banner-trai span:hover{
+    color:  rgb(245, 93, 33);
+}
+.button{
+    height: 40px;
+    width: 100px;
+    padding-left: 5px;
+    margin-top: 5px;
+    margin-right: 200px;
+}
+
+body:before{
+    content:'';
+    height:100%;
+    display:inline-block;
+    vertical-align:middle;
+}
+
+button{
+    background:rgb(61, 60, 60);
+    color:rgb(255, 187, 0);
+    border:none;
+    position:relative;
+    height:40px;
+    font-size:em;
+    padding:-3px 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+}
+
+button:hover{
+    background:rgb(219, 190, 21);
+    color:rgb(255, 255, 255);
+}
+button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #3b3a3a;
+    transition:400ms ease all;
+}
+button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+button:hover:before,button:hover:after{
+    width:100%;
+     ransition:800ms ease all;
+}
+
+.banner-duoi{
+    background-color: white;
+    height:70px;
+    width: 100%;
+    display: flex;
+}
+.banner-duoi .logo{
+    width:30%;
+}
+.logo img{
+    margin: auto;
+    height: 100%;
+    width: 56%;
+    margin-left: 90px;
+}
+.banner-duoi .menutop{
+    width: 70%;
+    margin-left: 69px;
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.menutop{
+    width: 100%;
+    height: 70px;
+    line-height: 40px;
+    z-index: 1;
+}
+
+._1item{
+    position: relative;
+    height: 100%;
+    background-color: white;
+    line-height: 40px; 
+}
+
+.menutop> ul{
+    display: flex;
+    list-style: none;
+}
+
+.menutop> ul >li a{
+text-decoration: none;
+}
+
+._1item a.layer1{
+    color: black;
+    padding: 10px 20px;
+}
+
+._1item:hover .layer1,._1item .layer2 li:hover a {
+    color: rgb(255, 123, 0); 
+}
+
+._1item .layer2{
+position:absolute;
+top:50px;
+left:0px;
+visibility: hidden;
+opacity: 0;
+transition: 0.3s;
+width: 150px;
+background-color: black;
+}
+._1item:hover .layer2 {
+    visibility: visible;
+    opacity: 1;  
+    top:40px;
+}
+
+._1item .layer2 ul{
+    list-style: none;
+}
+
+._1item .layer2 ul li a{
+    display: block;width: 150px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    font-family: segoe ui hight;
+    color: black;
+}
+._1item .layer2 ul li a{
+    background-color: white;
+    color:black;
+}
+
+
+
+
+
+
+
+input {
+    outline: none;
+}
+input[type=search] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    font-family: inherit;
+    font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+    display: none; 
+}
+
+
+input[type=search] {
+    background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+    border: solid 1px #ccc;
+    padding: 0px 12px 0px 35px;
+    width: 60px;
+    
+    -webkit-border-radius: 10em;
+    -moz-border-radius: 10em;
+    border-radius: 10em;
+    
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+input[type=search]:focus {
+    width: 130px;
+    background-color: #fff;
+    border-color: #66CC75;
+    
+    -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+
+input:-moz-placeholder {
+    color: #999;
+}
+input::-webkit-input-placeholder {
+    color: #999;
+}
+
+.slide {
+    display: flex;
+    margin-left:auto;
+    margin-right:auto;
+    transition: 0.5s;
+    
+}
+.click{ opacity: 0;}
+.click:hover{ opacity: 1;}
+
+.slide .slide-trai, .slide-phai{
+    width:258px;
+    height: 520px;
+}
+
+#ss{
+    margin-top:10px;
+    width: 850px;
+    height: 520px;
+   
+}
+
+ .carousel-item{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.carousel-inner img{
+    width: 850px;
+    height: 520px;
+   
+}
+#ss .carousel-indicators{
+    opacity: 0;
+}
+/* ---hết slide */
+.text-father{
+    background-color: rgb(241, 241, 241);
+    height: 630px;
+}
+.text-top{
+    padding-top:100px;
+    text-align: center;
+    width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+h6{
+    color: rgb(167, 167, 167);
+}
+.text-to{
+    display: flex;
+    margin-top:50px;
+}
+.text-to1{with:10%}
+.text-to2{with:10%}
+/* ---hết phần chia flex trong phần text-to */
+
+.text-bottom{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-bottom1{
+    background-color: white;
+    text-align: center;
+    width: 315px;
+    height: 300px;
+    border-radius: 10%;
+}
+
+
+.text-bottom2{
+    background-color: white;
+    text-align: center;
+    width: 315px;
+    height: 300px; 
+    border-radius: 10%;
+}
+    
+.text-bottom3{
+    background-color: white;
+    text-align: center;
+    width: 315px;
+    height: 300px;
+    border-radius: 10%;
+}
+/* ---hết bottom trong phần text-to */
+.icon1{
+    font-size: 80px;
+    color:rgb(226, 79, 153);
+  }
+  .icon2{
+    font-size: 80px;
+    color:yellow;
+  }   
+  .icon3{
+    font-size: 80px;
+    color:greenyellow;
+  }
+  /* ---hết icon trong phần text-to */
+  .text-bottom1:hover ,.text-bottom2:hover, .text-bottom3:hover{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: 0.4s;}
+.du .duto{
+    height: 235px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 27.5% 45% 27.5%;
+    margin-right: auto;
+    margin-left: auto;
+} 
+.du .du1{
+    text-align: center;
+    padding-top: 100px;
+}
+.du .dunho{
+    width: 100%;
+    height: 200px;
+   
+   
+}
+.du .dunho-giua{
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1000px;
+    height: 120px;
+    text-align: center;
+}
+.iconnho{
+    color: white;
+    font-size: 30px;
+}
+.dunho-giua h6{
+    color: white;
+}
+.dunho-giua .dunho1{
+    background-color: rgb(235, 43, 171);
+    width: 15%;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    padding-top: 20px;
+}
+.dunho-giua .dunho2{
+    background-color:rgb(47, 196, 255);
+    width: 15%;
+    border-radius: 10px;
+    padding-top: 20px;
+}
+.dunho-giua .dunho3{
+    background-color:rgb(255, 136, 0);
+    width: 15%;
+    border-radius: 10px;
+    padding-top: 20px;
+}
+.dunho-giua .dunho4{
+    background-color:rgb(255, 51, 0);
+    width: 15%;
+    border-radius: 10px;
+    padding-top: 20px;
+}
+.dunho-giua .dunho5{
+    background-color:rgb(158, 231, 47);
+    width: 15%;
+    border-radius: 10px;
+    padding-top: 20px;
+}
+.dunho-giua .dunho6{
+    background-color:rgb(255, 196, 0);
+    width: 15%;
+    border-radius: 10px;
+    padding-top: 20px;
+}
+
+.dunho .dunho-dau{
+    width: 25%;
+  }
+
+ .dunho .dunho-cuoi{
+    width:25%;
+  }
+a:hover{
+text-decoration: none;
+}
+.clip{
+    
+    height: 313px;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.clip-trai{
+    
+    height: 90%;
+    width: 55%;
+    position: absolute;
+    z-index: 1;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius:0 150px 150px 0;
+    margin-top:50px;
+    background-color:white;
+}
+.border1{
+   
+    height: 90%;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 70px;
+}
+.clip-phai{
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    right: 0;
+   
+}
+video{
+    width: 100%;
+    border-radius: 20px;
+    position: absolute;
+}
+p{
+color:rgb(167, 167, 167);
+}
+.our{
+    width: 100%;
+}
+.our .our-tren{
+    
+    margin-top:200px;
+    text-align: center;
+    width: 630px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.our-duoi{
+    display: grid;
+    grid-template-columns: 352px 352px 352px;
+    grid-template-rows: 400px 400px;
+    grid-gap: 30px 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+.duoi1{
+    border:1px solid rgb(228, 228, 228);
+    border-radius:10px;
+    overflow: hidden;
+    transition:all 0.8s ease ease-out;
+}
+.can{
+    padding-left: 10px;
+}
+.can a{
+    color: rgb(54, 54, 54);
+}
+.chiacot{
+    display: flex;
+    width: 100%;
+    
+}
+.sao{
+    float: left;
+    width: 200px;
+    color: yellow;
+    padding-left: 10px;
+}
+.tym{
+    display: flex;
+    float: right;
+    width: 100px;
+}
+.tym1{
+    width: 50px;
+    color:rgb(146, 146, 146);
+    margin-left: 55px;
+}
+.tym2{
+    width: 50px;
+    color:rgb(146, 146, 146);
+    padding-left: 5px;
+}
+.our-duoi .duoi1 .anh{
+    width: 351px;
+    height: 230px;
+    overflow: hidden;
+    backface-visibility: hidden;
+    border-radius:10px 10px 0 0;
+}
+.our-duoi img{
+    transform: scale(1);
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+}
+.our-duoi img:hover{
+    overflow: hidden;
+    transform: scale(1.1);
+}
+.but-to{
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+
+    
+
+
